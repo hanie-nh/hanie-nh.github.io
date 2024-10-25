@@ -1,0 +1,46 @@
+span#id1 {
+    color:blue;
+}
+span.highlight {
+    background-color:aquamarine;
+    color: blue;
+}
+#id2{
+    color: green;
+}
+span+p{
+    font-weight: bold;
+}
+p+p{
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.items > a{ /* only aplly for direct type, < or > */ 
+    color: green;
+    font-weight: bold;
+}
+
+.red{
+    color: red;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.bold{
+    background-color: yellow;
+}
+.highlight{
+    color:blue;
+    background-color: yellow;
+}
+
+p[test]{
+    color: orange;
+    text-decoration: bold;
+}
+
+h1#header.intro{
+    color: brown;
+}
