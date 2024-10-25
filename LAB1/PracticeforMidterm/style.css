@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 40px;
     background: #ccc;
 }
 nav#topmenu ul{
@@ -35,14 +35,14 @@ aside head p {
     font-style: italic;
 }
 table {
-        border: 1px #444;
+        border: 1px solid #444;
         border-collapse: collapse;
         text-align: center;
-        min-width: 500;
+        min-width: 80px;
     }
     table td{
         border: 1px solid black;
-        padding: 5pxS;
+        padding: 5px;
         text-align: center;
-        min-width: 600;
+        min-width: 80px;
     }
