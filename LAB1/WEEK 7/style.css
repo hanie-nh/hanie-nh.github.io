@@ -44,3 +44,20 @@ p[test]{
 h1#header.intro{
     color: brown;
 }
+
+p:hover{
+    color:chartreuse;
+    text-decoration: italic;
+}
+
+a:visited{
+    color:brown;
+}
+
+b:link {
+    color:darkmagenta;
+}
+
+a:active {
+    background: yellowgreen;
+}
