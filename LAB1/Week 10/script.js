@@ -37,5 +37,5 @@ function calculate(operation) {
     }
   
     resultElement.textContent = `Result: ${result}`;
-    resultElement.style.color = 'green';
+    resultElement.style.color = 'red';
   }
