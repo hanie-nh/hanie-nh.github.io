@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #b22222; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+    color: darkgreen ;
+    font-size: small;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: small;
+}
+
+nav ul li a {
+    color: bisque;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('https://imgv3.fotor.com/images/share/Christmas-theme-background.jpeg');
+    height: 100px;
+    background-size: cover;
+    position: relative; /* Allows child elements to be positioned */
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+    text-align: center; /* Aligns multi-line text to the center */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Add the white layer */
+    opacity: 10%; /* Adjust transparency */
+    z-index: 1; /* White layer sits below text */
+}
+
+.hero h1 {
+    color: #b22222; /* Adjust text color as needed */
+    font-size: 24px; /* Adjust font size */
+    position: relative; /* Ensures text stays above the white layer */
+    z-index: 2; /* Places text above the white layer */
+    margin: 0; /* Removes default margin for h1 */
+    opacity: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.block {
+    background-color: #fff; /* White background for blocks */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+.block:hover {
+    transform: translateY(-5px); /* Moves the block slightly upward */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow */
+    cursor: pointer; /* Indicates the block is interactive */
+}
+
+.block:active {
+    transform: scale(0.98); /* Shrinks the block slightly when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduces shadow */
+}
+
+.block img {
+margin: 5px;
+align-items: center;
+text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+h3 {
+    color:chocolate;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
