@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF1D7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #d42d2d;
+}
+
+header {
+    background: linear-gradient(to right, #ff7b7b, #ffcccb);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Countdown Section */
+.countdown {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+/* Decorations Section */
+.decorations {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.decorations iframe {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Recipes Section */
+.recipes {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.recipes h3 {
+    color: #3e8f3e;
+}
+
+.recipes iframe {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+.recipes h2{
+    text-align: center;
+}
+/* Activities Section */
+.activities {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.activities ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.activities ul li {
+    margin: 10px 0;
+    background: #ffe7e7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.activities iframe {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #d42d2d;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #ffcccb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

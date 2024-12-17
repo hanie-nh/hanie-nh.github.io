@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Celebration</title>
+    <link rel="stylesheet" href="christmas.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>🎄 Celebrate Christmas 🎅</h1>
+        <p>Join us in spreading holiday cheer and joy!</p>
+    </header>
+
+    <section class="countdown">
+        <h2>Countdown to Christmas</h2>
+        <div id="timer">00 Days : 00 Hours : 00 Minutes : 00 Seconds</div>
+    </section>
+
+    <section class="decorations">
+        <h2>Festive Decorations</h2>
+        <div class="gallery">
+            <img width="315" height="560" src="https://th.bing.com/th/id/OIP.UioRFN9gUR3w8HmJHKS3iwHaKE?rs=1&pid=ImgDetMain" alt="Christmas Tree">
+            <img width="315" height="560" src="https://th.bing.com/th/id/OIP.Cno-Wdhf5lxpPIn7myXsYwHaLH?rs=1&pid=ImgDetMain" alt="Christmas Lights">
+            <img width="315" height="560" src="https://th.bing.com/th/id/OIP.fsLHN-msXw-18JhnR72Y8wHaLG?rs=1&pid=ImgDetMain" alt="Ornaments">
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/P-rsZkIKi00?si=OUqprY8q8-t0xnFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="recipes">
+        <h2>Holiday Recipes</h2>
+        <article>
+            <h3>Classic Christmas Cookies</h3>
+            <p>Ingredients: Flour, sugar, butter, vanilla, sprinkles.</p>
+            <p>Instructions: Mix, bake, and decorate for a sweet treat!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bPZrWFGamzQ?si=zGD4wwwGya5xKKrW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+    </section>
+
+    <section class="activities">
+        <h2>Holiday Activities</h2>
+        <ul>
+            <li>🎵 Sing Christmas Carols</li>
+            <li>🎁 Exchange Gifts</li>
+            <li>📽️ Watch Classic Christmas Movies</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PneS1f3mGGQ?si=P_GYS7XXIfvycqnB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Holiday Cheer. Share the joy: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateTimer() {
+            const christmasDate = new Date('December 25, 2024 00:00:00');
+            const now = new Date();
+            const diff = christmasDate - now;
+
+            if (diff <= 0) {
+                document.getElementById('timer').textContent = 'Merry Christmas!';
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('timer').textContent = `${days} Days : ${hours} Hours : ${minutes} Minutes : ${seconds} Seconds`;
+        }
+
+        setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>
